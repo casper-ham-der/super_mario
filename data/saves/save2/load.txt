@@ -1,0 +1,4 @@
+load	false
+lives	3
+level	1
+world	1
