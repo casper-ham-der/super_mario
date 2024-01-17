@@ -1,4 +1,4 @@
 load	true
 lives	3
 level	2
-world	2
+world	3

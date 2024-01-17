@@ -56,6 +56,8 @@ void draw() {
     world23Load();
   } else if (world31) {
     world31Load();
+  } else if (world32) {
+    world32Load();
   }
   
   
@@ -106,7 +108,7 @@ void playerLoad() {
   yPos += ySpeed;
   if (!win) {
     if (!groundOrBlock(xPos, yPos)) {
-      ySpeed += ((29.46*3)/60);
+      ySpeed += ((29.46*3.8)/60);
     } else {
       ySpeed = 0;
       yPos = ground(xPos, yPos);
