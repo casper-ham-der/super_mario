@@ -11,6 +11,15 @@ boolean world23 = false;
 boolean world31 = false;
 boolean world32 = false;
 boolean world33 = false;
+boolean world41 = false;
+boolean world42 = false;
+boolean world43 = false;
+boolean world51 = false;
+boolean world52 = false;
+boolean world53 = false;
+boolean world61 = false;
+boolean world62 = false;
+boolean world63 = false;
 PFont font;
 int coins = 0;
 int world = 1;
@@ -58,6 +67,26 @@ void draw() {
     world31Load();
   } else if (world32) {
     world32Load();
+  } else if (world33) {
+    world33Load();
+  } else if (world41) {
+    world41Load();
+  } else if (world42) {
+    world42Load();
+  } else if (world43) {
+    world43Load();
+  } else if (world51) {
+    world51Load();
+  } else if (world52) {
+    world52Load();
+  } else if (world53) {
+    world53Load();
+  } else if (world61) {
+    world61Load();
+  } else if (world62) {
+    world62Load();
+  } else if (world63) {
+    world63Load();
   }
   
   

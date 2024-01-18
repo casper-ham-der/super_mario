@@ -92,13 +92,75 @@ void world31Load() {
 
 void world32Load() {
   
-  worldLoader(level32, ((240)*10/3+10/3)/240*3228, (240)*10/3+10/3, 0, (208-1)*10/3+10/3, -5840, true, 3, 2);
+  worldLoader(level32, ((240)*10/3+10/3)/240*3228, (240)*10/3+10/3, 0, (208-1)*10/3+10/3, -5843, true, 3, 2);
   if (nextLevel) {
     world32=false;
     world33 = true;
     nextLevel = false;
     win = false;
   }
+}
+
+void world33Load() {
+  
+  worldLoader(level33, ((240)*10/3+10/3)/240*3840, (240)*10/3+10/3, 0, (208-1)*10/3+10/3, -6840, false, 3, 3);
+  if (nextLevel) {
+    world33=false;
+    world41 = true;
+    nextLevel = false;
+    win = false;
+  }
+}
+
+void world41Load() {
+  
+  worldLoader(level41, ((240)*10/3+10/3)/240*4096, (240)*10/3+10/3, 0, (208-1)*10/3+10/3, -7932, true, 4, 1);
+  if (nextLevel) {
+    world41=false;
+    world42 = true;
+    nextLevel = false;
+    win = false;
+  }
+}
+
+void world42Load() {
+  
+  worldLoader(level42, ((720)*10/3+10/3)/720*3840, (720)*10/3+10/3, ((240)*10/3+10/3)-((480)*10/3+10/3), (208-1)*10/3+10/3, -9370, true, 4, 2);
+  if (nextLevel) {
+    world42=false;
+    world43 = true;
+    nextLevel = false;
+    win = false;
+  }
+}
+
+void world43Load() {
+  
+  worldLoader(level43, ((240)*10/3+10/3)/240*3328, (240)*10/3+10/3, 0, (208-1)*10/3+10/3, -19370, false, 4, 3);
+  if (nextLevel) {
+    world43=false;
+    world51 = true;
+    nextLevel = false;
+    win = false;
+  }
+}
+
+void world51Load() {
+}
+
+void world52Load() {
+}
+
+void world53Load() {
+}
+
+void world61Load() {
+}
+
+void world62Load() {
+}
+
+void world63Load() {
 }
 
 

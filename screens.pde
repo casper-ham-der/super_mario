@@ -225,7 +225,7 @@ void savesScreenLoad() {
 
       marioHead = loadImage("textures/on_screen_icons/mario_head.png");
       marioHead.resize(int(44*1), int(28*1));
-      image(marioHead, (634-318)/2+318-textWidth("slot 1")/2+20, 187+100);
+      image(marioHead, (1087-760)/2+760-textWidth("slot 2")/2+20, 187+100);
       marioHead = loadImage("textures/on_screen_icons/mario_head.png");
       marioHead.resize(int(44*1.5), int(28*1.5));
 

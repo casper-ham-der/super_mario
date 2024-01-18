@@ -113,5 +113,29 @@ void startWorld(float worldstart, float levelstart){
     } else if (levelstart == 3) {
       world33 = true;
     }
+  } else if (worldstart == 4) {
+    if (levelstart == 1) {
+      world41 = true;
+    } else if (levelstart == 2) {
+      world42 = true;
+    } else if (levelstart == 3) {
+      world43 = true;
+    }
+  } else if (worldstart == 5) {
+    if (levelstart == 1) {
+      world51 = true;
+    } else if (levelstart == 2) {
+      world52 = true;
+    } else if (levelstart == 3) {
+      world53 = true;
+    }
+  } else if (worldstart == 6) {
+    if (levelstart == 1) {
+      world61 = true;
+    } else if (levelstart == 2) {
+      world62 = true;
+    } else if (levelstart == 3) {
+      world63 = true;
+    }
   }
 }
