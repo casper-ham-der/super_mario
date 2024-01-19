@@ -11,7 +11,7 @@ float screenXPos = 100;
 float screenYPos = 0;
 
 void world11Load() {
-  worldLoader(level11, 7168*800/480, 1600, 0, (208-1)*10/3+10/3, -9573, true, 1, 1);
+  worldLoader(level11, 7168*800/480, 1600, 0, (206)*10/3+10/3, -9573, true, 1, 1);
 
   if (nextLevel) {
     world11=false;
@@ -191,7 +191,7 @@ void world61Load() {
 
 void world62Load() {
 
-  worldLoader(level62, ((240)*10/3+10/3)/240*4608, (240)*10/3+10/3, 0, (208-1)*10/3+10/3, -9270, true, 6, 2);
+  worldLoader(level62, (pxConv(240))/240*4608, pxConv(240), 0, pxConv(207), -9270, true, 6, 2);
   if (nextLevel) {
     world62=false;
     world63 = true;
@@ -202,7 +202,7 @@ void world62Load() {
 
 void world63Load() {
 
-  worldLoader(level63, ((480)*10/3+10/3)/480*5120, (480)*10/3+10/3, 0, (208-1)*10/3+10/3, -12890, false, 6, 3);
+  worldLoader(level63, (pxConv(480))/480*5120, pxConv(480), 0, pxConv(207), -12890, false, 6, 3);
   if (nextLevel) {
     world63=false;
     reset();
@@ -228,6 +228,10 @@ void worldLoader(PImage levelImage, float levelWidth, float levelHeight, float s
       save2Save("level", String.valueOf(level));
       save2Save("world", String.valueOf(world));
     }
+    groundBlocksY = new float[0];
+    groundBlocksX = new float[0];
+    groundBlockIn();
+    
     screenXPos = 100;
     screenYPos = screenStartPos;
     world = worldNumber;
@@ -244,7 +248,7 @@ void worldLoader(PImage levelImage, float levelWidth, float levelHeight, float s
     if (!win) {
       if (keyPressed) {
         if (keyCode == RIGHT || key == 'd') {
-            runningMario('r', levelWidth);
+          runningMario('r', levelWidth);
         } else if (keyCode == LEFT || key == 'a') {
           runningMario('l', levelWidth);
         } else if (keyCode == UP && !pressed || key == 'w' && !pressed) {

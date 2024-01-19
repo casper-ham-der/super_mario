@@ -104,9 +104,8 @@ void draw() {
 
   playerLoad();
   screenInfoLoad();
-  println(screenXPos);
-  println(win);
   
+  println(groundBlocksY+"  "+groundBlocksX + "  "+groundBlocksX.length);
 }
 
 void screenInfoLoad() {
@@ -141,12 +140,12 @@ void screenInfoLoad() {
 void playerLoad() {
   xPos += xSpeed;
   yPos += ySpeed;
-  if (!win) {
-    if (!groundOrBlock(xPos, yPos)) {
+  if (!win && levelEntered) {
+    if (!groundOrBlock(xPos, yPos, "top")) {
       ySpeed += ((29.46*3.8)/60);
     } else {
       ySpeed = 0;
-      yPos = ground(xPos, yPos);
+      yPos = groundBlocksY[groundBlock];;
       pressed = false;
     }
   }
