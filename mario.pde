@@ -88,19 +88,25 @@ void draw() {
   } else if (world63) {
     world63Load();
   }
-  
-  
+
+
   if (mousePressed) {
     mousePressor = true;
   } else {
     mousePressor = false;
   }
-  
-  
+
+  if (keyPressed) {
+    if (key == 'p') {
+      reset();
+    }
+  }
+
   playerLoad();
   screenInfoLoad();
   println(screenXPos);
   println(win);
+  
 }
 
 void screenInfoLoad() {
@@ -144,4 +150,48 @@ void playerLoad() {
       pressed = false;
     }
   }
+}
+
+void reset() {
+  startScreen = true;
+  loadingscreen = false;
+  levelEntered = false;
+  savesScreen = false;
+  world11 = false;
+  world12 = false;
+  world13 = false;
+  world21 = false;
+  world22 = false;
+  world23 = false;
+  world31 = false;
+  world32 = false;
+  world33 = false;
+  world41 = false;
+  world42 = false;
+  world43 = false;
+  world51 = false;
+  world52 = false;
+  world53 = false;
+  world61 = false;
+  world62 = false;
+  world63 = false;
+  coins = 0;
+  world = 1;
+  level = 1;
+  time = 0;
+  lives = 0;
+  save = 0;
+  cursor = false;
+  mousePressor = false;
+  counterStart = 60;
+  counterSave = 0;
+  cursorInt = 0;
+  deletable = false;
+  pressedDelete = false;
+  counter = 0;
+  turnRight = true;
+  pressed = false;
+  win = false;
+  screenXPos = 100;
+  screenYPos = 0;
 }

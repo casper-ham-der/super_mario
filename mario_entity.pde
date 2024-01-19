@@ -16,8 +16,10 @@ void runningMario(char c, float screenLength) {
     xSpeed = 10;
     if (xPos > width-400) {
       xSpeed = 0;
-      if ( screenXPos > -screenLength+(width-100)) {
-        screenXPos -= 10;
+      if (!stopCheck) {
+        if ( screenXPos > -screenLength+(width-100)) {
+          screenXPos -= 10;
+        }
       }
     }
   } else if (c == 'l') {
@@ -77,8 +79,7 @@ void standMario() {
 }
 
 void poleWin() {
-  ySpeed = 0;
-  
+
   pushMatrix();
   translate(xPos, yPos);
   image(marioPole, -(30*400/480), -32*800/480);
@@ -99,7 +100,6 @@ void poleWin() {
 }
 
 void bossWin() {
-  ySpeed = 0;
   counter = 0;
   counterWin = 0;
   nextLevel = true;
