@@ -272,7 +272,6 @@ void savesScreenLoad() {
     }
   }
 
-  println(cursorInt);
   if (!deletable) {
     if (cursorInt == 4) {
       cursor = false;

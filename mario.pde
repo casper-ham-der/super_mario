@@ -105,7 +105,7 @@ void draw() {
   playerLoad();
   screenInfoLoad();
   
-  println(groundBlocksY+"  "+groundBlocksX + "  "+groundBlocksX.length);
+  println(screenXPos);
 }
 
 void screenInfoLoad() {
@@ -145,7 +145,7 @@ void playerLoad() {
       ySpeed += ((29.46*3.8)/60);
     } else {
       ySpeed = 0;
-      yPos = groundBlocksY[groundBlock];;
+      yPos = blocksY[groundBlock];;
       pressed = false;
     }
   }

@@ -34,55 +34,55 @@ void imageLoader() {
   level11.resize(7168*800/480, 1600);
 
   level12 = loadImage("textures/screens/level1-2.png");
-  level12.resize(((720-1)*10/3+10/3)/720*3072, (720-1)*10/3+10/3);
+  level12.resize(int(pxConv(3072)), (720)*10/3+10/3);
 
   level13 = loadImage("textures/screens/level1-3.png");
-  level13.resize(((240)*10/3+10/3)/240*3328, (240)*10/3+10/3);
+  level13.resize(int(pxConv(3328)), (240)*10/3+10/3);
 
   level21 = loadImage("textures/screens/level2-1.png");
-  level21.resize(((720)*10/3+10/3)/720*3584, (720)*10/3+10/3);
+  level21.resize(int(pxConv(3584)), (720)*10/3+10/3);
 
   level22 = loadImage("textures/screens/level2-2.png");
-  level22.resize(((240)*10/3+10/3)/240*4608, (240)*10/3+10/3);
+  level22.resize(int(pxConv(4608)), (240)*10/3+10/3);
 
   level23 = loadImage("textures/screens/level2-3.png");
-  level23.resize(((240)*10/3+10/3)/240*3328, (240)*10/3+10/3);
+  level23.resize(int(pxConv(3328)), (240)*10/3+10/3);
 
   level31 = loadImage("textures/screens/level3-1.png");
-  level31.resize(((480)*10/3+10/3)/480*3840, (480)*10/3+10/3);
+  level31.resize(int(pxConv(3840)), (480)*10/3+10/3);
 
   level32 = loadImage("textures/screens/level3-2.png");
-  level32.resize(((240)*10/3+10/3)/240*3228, (240)*10/3+10/3);
+  level32.resize(int(pxConv(3228)), (240)*10/3+10/3);
 
   level33 = loadImage("textures/screens/level3-3.png");
-  level33.resize(((240)*10/3+10/3)/240*3840, (240)*10/3+10/3);
+  level33.resize(int(pxConv(3840)), (240)*10/3+10/3);
 
   level41 = loadImage("textures/screens/level4-1.png");
-  level41.resize(((240)*10/3+10/3)/240*4096, (240)*10/3+10/3);
+  level41.resize(int(pxConv(4096)), (240)*10/3+10/3);
 
   level42 = loadImage("textures/screens/level4-2.png");
-  level42.resize(((720)*10/3+10/3)/720*3840, (720)*10/3+10/3);
+  level42.resize(int(pxConv(3840)), (720)*10/3+10/3);
 
   level43 = loadImage("textures/screens/level4-3.png");
-  level43.resize(((240)*10/3+10/3)/240*3328, (240)*10/3+10/3);
+  level43.resize(int(pxConv(3328)), (240)*10/3+10/3);
   
   level51 = loadImage("textures/screens/level5-1.png");
-  level51.resize(((480)*10/3+10/3)/480*3328, (480)*10/3+10/3);
+  level51.resize(int(pxConv(3328)), (480)*10/3+10/3);
 
   level52 = loadImage("textures/screens/level5-2.png");
-  level52.resize(((240)*10/3+10/3)/240*4608, (240)*10/3+10/3);
+  level52.resize(int(pxConv(4608)), (240)*10/3+10/3);
 
   level53 = loadImage("textures/screens/level5-3.png");
-  level53.resize(((240)*10/3+10/3)/240*4352, (240)*10/3+10/3);
+  level53.resize(int(pxConv(4352)), (240)*10/3+10/3);
   
   level61 = loadImage("textures/screens/level6-1.png");
-  level61.resize(((480)*10/3+10/3)/480*6400, (480)*10/3+10/3);
+  level61.resize(int(pxConv(6400)), (480)*10/3+10/3);
 
   level62 = loadImage("textures/screens/level6-2.png");
-  level62.resize(((240)*10/3+10/3)/240*4608, (240)*10/3+10/3);
+  level62.resize(int(pxConv(4608)), (240)*10/3+10/3);
 
   level63 = loadImage("textures/screens/level6-3.png");
-  level63.resize(((480)*10/3+10/3)/480*5120, (480)*10/3+10/3);
+  level63.resize(int(pxConv(5120)), (480)*10/3+10/3);
 
   marioRun[0] = loadImage("textures/entities/mario/running_1.png");
   marioRun[1] = loadImage("textures/entities/mario/running_2.png");

@@ -11,7 +11,7 @@ float screenXPos = 100;
 float screenYPos = 0;
 
 void world11Load() {
-  worldLoader(level11, 7168*800/480, 1600, 0, (206)*10/3+10/3, -9573, true, 1, 1);
+  worldLoader(level11, 7168*800/480, 1600, 0, (206)*10/3+10/3, -9570, true, 1, 1);
 
   if (nextLevel) {
     world11=false;
@@ -22,7 +22,7 @@ void world11Load() {
 }
 
 void world12Load() {
-  worldLoader(level12, ((720-1)*10/3+10/3)/720*3072, (720-1)*10/3+10/3, 0, (208-1)*10/3+10/3, -7263, true, 1, 2);
+  worldLoader(level12, int(pxConv(3072)), (720-1)*10/3+10/3, 0, (208-1)*10/3+10/3, -8167, true, 1, 2);
   if (nextLevel) {
     world12=false;
     world13 = true;
@@ -33,7 +33,7 @@ void world12Load() {
 
 void world13Load() {
 
-  worldLoader(level13, ((240)*10/3+10/3)/240*3328, (240)*10/3+10/3, 0, (208-1)*10/3+10/3, -5190, false, 1, 3);
+  worldLoader(level13, int(pxConv(3328)), (240)*10/3+10/3, 0, (112-1)*10/3+10/3, -5190, false, 1, 3);
   if (nextLevel) {
     world13=false;
     world21 = true;
@@ -45,7 +45,7 @@ void world13Load() {
 
 void world21Load() {
 
-  worldLoader(level21, ((720)*10/3+10/3)/720*3584, (720)*10/3+10/3, ((240)*10/3+10/3)-((480)*10/3+10/3), (208-1)*10/3+10/3, -8613, true, 2, 1);
+  worldLoader(level21, int(pxConv(3584)), (720)*10/3+10/3, ((240)*10/3+10/3)-((480)*10/3+10/3), (208-1)*10/3+10/3, -8613, true, 2, 1);
   if (nextLevel) {
     world21=false;
     world22 = true;
@@ -57,7 +57,7 @@ void world21Load() {
 
 void world22Load() {
 
-  worldLoader(level22, ((240)*10/3+10/3)/240*4608, (240)*10/3+10/3, 0, (208-1)*10/3+10/3, -9810, true, 2, 2);
+  worldLoader(level22, int(pxConv(4608)), (240)*10/3+10/3, 0, (208-1)*10/3+10/3, -9810, true, 2, 2);
   if (nextLevel) {
     world22=false;
     world23 = true;
@@ -69,7 +69,7 @@ void world22Load() {
 
 void world23Load() {
 
-  worldLoader(level23, ((240)*10/3+10/3)/240*3328, (240)*10/3+10/3, 0, (208-1)*10/3+10/3, -5300, false, 2, 3);
+  worldLoader(level23, int(pxConv(3328)), (240)*10/3+10/3, 0, (208-1)*10/3+10/3, -5300, false, 2, 3);
   if (nextLevel) {
     world23=false;
     world31 = true;
@@ -81,7 +81,7 @@ void world23Load() {
 
 void world31Load() {
 
-  worldLoader(level31, ((480)*10/3+10/3)/480*3840, (480)*10/3+10/3, 0, (208-1)*10/3+10/3, -9803, true, 3, 1);
+  worldLoader(level31, int(pxConv(3840)), (480)*10/3+10/3, 0, (208-1)*10/3+10/3, -9803, true, 3, 1);
   if (nextLevel) {
     world31=false;
     world32 = true;
@@ -92,7 +92,7 @@ void world31Load() {
 
 void world32Load() {
 
-  worldLoader(level32, ((240)*10/3+10/3)/240*3228, (240)*10/3+10/3, 0, (208-1)*10/3+10/3, -5843, true, 3, 2);
+  worldLoader(level32, int(pxConv(3228)), (240)*10/3+10/3, 0, (208-1)*10/3+10/3, -5843, true, 3, 2);
   if (nextLevel) {
     world32=false;
     world33 = true;
@@ -103,7 +103,7 @@ void world32Load() {
 
 void world33Load() {
 
-  worldLoader(level33, ((240)*10/3+10/3)/240*3840, (240)*10/3+10/3, 0, (208-1)*10/3+10/3, -6840, false, 3, 3);
+  worldLoader(level33, int(pxConv(3840)), (240)*10/3+10/3, 0, (208-1)*10/3+10/3, -6840, false, 3, 3);
   if (nextLevel) {
     world33=false;
     world41 = true;
@@ -114,7 +114,7 @@ void world33Load() {
 
 void world41Load() {
 
-  worldLoader(level41, ((240)*10/3+10/3)/240*4096, (240)*10/3+10/3, 0, (208-1)*10/3+10/3, -7932, true, 4, 1);
+  worldLoader(level41, int(pxConv(4096)), (240)*10/3+10/3, 0, (208-1)*10/3+10/3, -7932, true, 4, 1);
   if (nextLevel) {
     world41=false;
     world42 = true;
@@ -125,7 +125,7 @@ void world41Load() {
 
 void world42Load() {
 
-  worldLoader(level42, ((720)*10/3+10/3)/720*3840, (720)*10/3+10/3, ((240)*10/3+10/3)-((480)*10/3+10/3), (208-1)*10/3+10/3, -9370, true, 4, 2);
+  worldLoader(level42, int(pxConv(3840)), (720)*10/3+10/3, ((240)*10/3+10/3)-((480)*10/3+10/3), (208-1)*10/3+10/3, -9370, true, 4, 2);
   if (nextLevel) {
     world42=false;
     world43 = true;
@@ -136,7 +136,7 @@ void world42Load() {
 
 void world43Load() {
 
-  worldLoader(level43, ((240)*10/3+10/3)/240*3328, (240)*10/3+10/3, 0, (208-1)*10/3+10/3, -5220, false, 4, 3);
+  worldLoader(level43, int(pxConv(3328)), (240)*10/3+10/3, 0, (208-1)*10/3+10/3, -5220, false, 4, 3);
   if (nextLevel) {
     world43=false;
     world51 = true;
@@ -147,7 +147,7 @@ void world43Load() {
 
 void world51Load() {
 
-  worldLoader(level51, ((480)*10/3+10/3)/480*3328, (480)*10/3+10/3, 0, (208-1)*10/3+10/3, -7582, true, 5, 1);
+  worldLoader(level51, int(pxConv(3328)), (480)*10/3+10/3, 0, (208-1)*10/3+10/3, -7582, true, 5, 1);
   if (nextLevel) {
     world51=false;
     world52 = true;
@@ -158,7 +158,7 @@ void world51Load() {
 
 void world52Load() {
 
-  worldLoader(level52, ((240)*10/3+10/3)/240*4608, (240)*10/3+10/3, 0, (208-1)*10/3+10/3, -9800, true, 5, 2);
+  worldLoader(level52, int(pxConv(4608)), (240)*10/3+10/3, 0, (208-1)*10/3+10/3, -9800, true, 5, 2);
   if (nextLevel) {
     world52=false;
     world53 = true;
@@ -169,7 +169,7 @@ void world52Load() {
 
 void world53Load() {
 
-  worldLoader(level53, ((240)*10/3+10/3)/240*4352, (240)*10/3+10/3, 0, (208-1)*10/3+10/3, -8270, false, 5, 3);
+  worldLoader(level53, int(pxConv(4352)), (240)*10/3+10/3, 0, (208-1)*10/3+10/3, -8270, false, 5, 3);
   if (nextLevel) {
     world53=false;
     world61 = true;
@@ -180,7 +180,7 @@ void world53Load() {
 
 void world61Load() {
 
-  worldLoader(level61, ((480)*10/3+10/3)/480*6400, (480)*10/3+10/3, 0, (208-1)*10/3+10/3, -17042, true, 6, 1);
+  worldLoader(level61, int(pxConv(6400)), (480)*10/3+10/3, 0, (208-1)*10/3+10/3, -17042, true, 6, 1);
   if (nextLevel) {
     world61=false;
     world62 = true;
@@ -191,7 +191,7 @@ void world61Load() {
 
 void world62Load() {
 
-  worldLoader(level62, (pxConv(240))/240*4608, pxConv(240), 0, pxConv(207), -9270, true, 6, 2);
+  worldLoader(level62, int(pxConv(4608)), pxConv(240), 0, pxConv(207), -9270, true, 6, 2);
   if (nextLevel) {
     world62=false;
     world63 = true;
@@ -202,7 +202,7 @@ void world62Load() {
 
 void world63Load() {
 
-  worldLoader(level63, (pxConv(480))/480*5120, pxConv(480), 0, pxConv(207), -12890, false, 6, 3);
+  worldLoader(level63, int(pxConv(5120)), pxConv(480), 0, pxConv(207), -12890, false, 6, 3);
   if (nextLevel) {
     world63=false;
     reset();
@@ -228,8 +228,10 @@ void worldLoader(PImage levelImage, float levelWidth, float levelHeight, float s
       save2Save("level", String.valueOf(level));
       save2Save("world", String.valueOf(world));
     }
-    groundBlocksY = new float[0];
-    groundBlocksX = new float[0];
+    blocksY = expand(blocksY, 0);
+    blocksX = expand(blocksX, 0);
+    blocksLength = expand(blocksLength, 0);
+    blocksHeight = expand(blocksHeight, 0);
     groundBlockIn();
     
     screenXPos = 100;
