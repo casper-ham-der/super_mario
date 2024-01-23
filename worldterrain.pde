@@ -26,6 +26,8 @@ void groundBlockIn() {
     if (level == 1) {
       blockLoads(0, 207, 1104, 240-207);
       
+      blockLoads(448, 175, 480-448, 207-175);
+      
       blockLoads(1136, 207, 1376-1136, 240-207);
       
       blockLoads(1424, 207, 2448-1424, 240-207);
@@ -48,13 +50,26 @@ void groundBlockIn() {
       
       blockLoads(240, 159, 416-240, 240-159);
       
-      blockLoads(464,(512-464)/16, 159, 0);
+      blockLoads(464, 159, 512-464, 240-159);
       
-      blockLoads(560,(1152-560)/16, 143, 0);
+      blockLoads(560, 143, 1152-560, 240-143);
+      
+      blockLoads(1152, 159, 1664-1152, 240-159);
+      
+      blockLoads(1664, 207, 1856-1664, 240-207);
+      
+      blockLoads(1856, 159, 1920-1856, 240-156);
+      
+      blockLoads(1920, 207, 1968-1920, 240-207);
+      
+      blockLoads(1968, 159, 2256-1968, 240-159);
       
     }
   } else if (world == 2) {
     if (level == 1) {
+      
+      blockLoads(0, 207, 1104, 240-207);
+      
     } else if (level == 2) {
     } else if (level == 3) {
     }

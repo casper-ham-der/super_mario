@@ -143,9 +143,10 @@ void playerLoad() {
   if (!win && levelEntered) {
     if (!groundOrBlock(xPos, yPos, "top")) {
       ySpeed += ((29.46*3.8)/60);
+      pressed = true;
     } else {
       ySpeed = 0;
-      yPos = blocksY[groundBlock];;
+      yPos = blocksY[groundBlock]+1;
       pressed = false;
     }
   }

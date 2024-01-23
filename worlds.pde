@@ -22,7 +22,7 @@ void world11Load() {
 }
 
 void world12Load() {
-  worldLoader(level12, int(pxConv(3072)), (720-1)*10/3+10/3, 0, (208-1)*10/3+10/3, -8167, true, 1, 2);
+  worldLoader(level12, int(pxConv(3072)), (720-1)*10/3+10/3, 0, (208-1)*10/3+10/3, -8170, true, 1, 2);
   if (nextLevel) {
     world12=false;
     world13 = true;
@@ -33,7 +33,7 @@ void world12Load() {
 
 void world13Load() {
 
-  worldLoader(level13, int(pxConv(3328)), (240)*10/3+10/3, 0, (112-1)*10/3+10/3, -5190, false, 1, 3);
+  worldLoader(level13, int(pxConv(3328)), (240)*10/3+10/3, 0, (112-1)*10/3+10/3, -5930, false, 1, 3);
   if (nextLevel) {
     world13=false;
     world21 = true;
